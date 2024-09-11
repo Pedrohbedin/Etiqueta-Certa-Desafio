@@ -1,0 +1,75 @@
+[
+  {
+    "ContainingType": "WebApiEtiqueCerta.Controllers.LabelController",
+    "Method": "Create",
+    "RelativePath": "api/Label",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "_label",
+        "Type": "WebApiEtiqueCerta.ViewModels.LabelViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiEtiqueCerta.Controllers.LabelController",
+    "Method": "Update",
+    "RelativePath": "api/Label",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "label",
+        "Type": "WebApiEtiqueCerta.Models.Label",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiEtiqueCerta.Controllers.LabelController",
+    "Method": "GetAll",
+    "RelativePath": "api/Label",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiEtiqueCerta.Controllers.LegislationController",
+    "Method": "Create",
+    "RelativePath": "api/Legislation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "_legislation",
+        "Type": "WebApiEtiqueCerta.ViewModels.LegislationViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiEtiqueCerta.Controllers.LegislationController",
+    "Method": "GetAll",
+    "RelativePath": "api/Legislation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

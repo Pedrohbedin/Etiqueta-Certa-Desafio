@@ -1,0 +1,6 @@
+@WebApiEtiqueCerta_HostAddress = http://localhost:5267
+
+GET {{WebApiEtiqueCerta_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

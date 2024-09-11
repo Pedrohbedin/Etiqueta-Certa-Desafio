@@ -1,0 +1,411 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\source\\repos\\webapietiquecerta\\viewmodels\\legislationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:viewmodels\\legislationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\source\\repos\\webapietiquecerta\\repository\\legislationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:repository\\legislationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\source\\repos\\webapietiquecerta\\interfaces\\ilegislationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:interfaces\\ilegislationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\source\\repos\\webapietiquecerta\\controllers\\legislationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:controllers\\legislationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\source\\repos\\webapietiquecerta\\models\\symbology.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:models\\symbology.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\source\\repos\\webapietiquecerta\\models\\processinlegislation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:models\\processinlegislation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\source\\repos\\webapietiquecerta\\models\\label.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:models\\label.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\source\\repos\\webapietiquecerta\\models\\legislation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:models\\legislation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\source\\repos\\webapietiquecerta\\interfaces\\iprocessinlegislation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:interfaces\\iprocessinlegislation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\source\\repos\\webapietiquecerta\\interfaces\\ilabelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:interfaces\\ilabelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\source\\repos\\webapietiquecerta\\viewmodels\\symbologyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:viewmodels\\symbologyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\source\\repos\\webapietiquecerta\\models\\symbologytranslate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:models\\symbologytranslate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\source\\repos\\webapietiquecerta\\repository\\processinlegislationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:repository\\processinlegislationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\source\\repos\\webapietiquecerta\\models\\etiquetacertacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:models\\etiquetacertacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\source\\repos\\webapietiquecerta\\viewmodels\\conservationprocessesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:viewmodels\\conservationprocessesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\source\\repos\\webapietiquecerta\\controllers\\labelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:controllers\\labelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\source\\repos\\webapietiquecerta\\repository\\symbologytranslaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:repository\\symbologytranslaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\source\\repos\\webapietiquecerta\\models\\labelsymbology.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:models\\labelsymbology.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\source\\repos\\webapietiquecerta\\interfaces\\isymbologytranslaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:interfaces\\isymbologytranslaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\source\\repos\\webapietiquecerta\\repository\\conservationprocessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:repository\\conservationprocessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\source\\repos\\webapietiquecerta\\viewmodels\\labelviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:viewmodels\\labelviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\source\\repos\\webapietiquecerta\\interfaces\\iconservationprocessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:interfaces\\iconservationprocessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\source\\repos\\webapietiquecerta\\repository\\labelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:repository\\labelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ILegislationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Interfaces\\ILegislationRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\ILegislationRepository.cs",
+              "ToolTip": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Interfaces\\ILegislationRepository.cs",
+              "RelativeToolTip": "Interfaces\\ILegislationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T13:05:20.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Label.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Models\\Label.cs",
+              "RelativeDocumentMoniker": "Models\\Label.cs",
+              "ToolTip": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Models\\Label.cs",
+              "RelativeToolTip": "Models\\Label.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAIA0wBUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T13:03:47.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Legislation.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Models\\Legislation.cs",
+              "RelativeDocumentMoniker": "Models\\Legislation.cs",
+              "ToolTip": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Models\\Legislation.cs",
+              "RelativeToolTip": "Models\\Legislation.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T13:03:03.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ILabelRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Interfaces\\ILabelRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\ILabelRepository.cs",
+              "ToolTip": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Interfaces\\ILabelRepository.cs",
+              "RelativeToolTip": "Interfaces\\ILabelRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T13:01:43.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProcessInLegislation.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Models\\ProcessInLegislation.cs",
+              "RelativeDocumentMoniker": "Models\\ProcessInLegislation.cs",
+              "ToolTip": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Models\\ProcessInLegislation.cs",
+              "RelativeToolTip": "Models\\ProcessInLegislation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T11:44:49.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LegislationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Repository\\LegislationRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\LegislationRepository.cs",
+              "ToolTip": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Repository\\LegislationRepository.cs",
+              "RelativeToolTip": "Repository\\LegislationRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAcwB8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T11:48:27.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LegislationViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\ViewModels\\LegislationViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\LegislationViewModel.cs",
+              "ToolTip": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\ViewModels\\LegislationViewModel.cs",
+              "RelativeToolTip": "ViewModels\\LegislationViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T13:25:26.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IProcessInLegislation.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Interfaces\\IProcessInLegislation.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IProcessInLegislation.cs",
+              "ToolTip": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Interfaces\\IProcessInLegislation.cs",
+              "RelativeToolTip": "Interfaces\\IProcessInLegislation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T13:13:11.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Symbology.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Models\\Symbology.cs",
+              "RelativeDocumentMoniker": "Models\\Symbology.cs",
+              "ToolTip": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Models\\Symbology.cs",
+              "RelativeToolTip": "Models\\Symbology.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T11:56:52.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LegislationController.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Controllers\\LegislationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LegislationController.cs",
+              "ToolTip": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Controllers\\LegislationController.cs",
+              "RelativeToolTip": "Controllers\\LegislationController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAUwEwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T11:05:30.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SymbologyViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\ViewModels\\SymbologyViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\SymbologyViewModel.cs",
+              "ToolTip": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\ViewModels\\SymbologyViewModel.cs",
+              "RelativeToolTip": "ViewModels\\SymbologyViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T12:30:26.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SymbologyTranslate.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Models\\SymbologyTranslate.cs",
+              "RelativeDocumentMoniker": "Models\\SymbologyTranslate.cs",
+              "ToolTip": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Models\\SymbologyTranslate.cs",
+              "RelativeToolTip": "Models\\SymbologyTranslate.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAEwA8AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T13:03:52.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProcessInLegislationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Repository\\ProcessInLegislationRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\ProcessInLegislationRepository.cs",
+              "ToolTip": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Repository\\ProcessInLegislationRepository.cs",
+              "RelativeToolTip": "Repository\\ProcessInLegislationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T13:13:50.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EtiquetaCertaContext.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Models\\EtiquetaCertaContext.cs",
+              "RelativeDocumentMoniker": "Models\\EtiquetaCertaContext.cs",
+              "ToolTip": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Models\\EtiquetaCertaContext.cs",
+              "RelativeToolTip": "Models\\EtiquetaCertaContext.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAMwBcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T11:56:59.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ConservationProcessesViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\ViewModels\\ConservationProcessesViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ConservationProcessesViewModel.cs",
+              "ToolTip": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\ViewModels\\ConservationProcessesViewModel.cs",
+              "RelativeToolTip": "ViewModels\\ConservationProcessesViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T11:39:58.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LabelController.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Controllers\\LabelController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LabelController.cs",
+              "ToolTip": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Controllers\\LabelController.cs",
+              "RelativeToolTip": "Controllers\\LabelController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowBAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:22:05.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SymbologyTranslateRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Repository\\SymbologyTranslateRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\SymbologyTranslateRepository.cs",
+              "ToolTip": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Repository\\SymbologyTranslateRepository.cs",
+              "RelativeToolTip": "Repository\\SymbologyTranslateRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T12:27:11.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LabelSymbology.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Models\\LabelSymbology.cs",
+              "RelativeDocumentMoniker": "Models\\LabelSymbology.cs",
+              "ToolTip": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Models\\LabelSymbology.cs",
+              "RelativeToolTip": "Models\\LabelSymbology.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T11:49:01.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ISymbologyTranslateRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Interfaces\\ISymbologyTranslateRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\ISymbologyTranslateRepository.cs",
+              "ToolTip": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Interfaces\\ISymbologyTranslateRepository.cs",
+              "RelativeToolTip": "Interfaces\\ISymbologyTranslateRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T11:26:46.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ConservationProcessRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Repository\\ConservationProcessRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\ConservationProcessRepository.cs",
+              "ToolTip": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Repository\\ConservationProcessRepository.cs",
+              "RelativeToolTip": "Repository\\ConservationProcessRepository.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAA8AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T11:54:05.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LabelViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\ViewModels\\LabelViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\LabelViewModel.cs",
+              "ToolTip": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\ViewModels\\LabelViewModel.cs",
+              "RelativeToolTip": "ViewModels\\LabelViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:32:49.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IConservationProcessRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Interfaces\\IConservationProcessRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IConservationProcessRepository.cs",
+              "ToolTip": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Interfaces\\IConservationProcessRepository.cs",
+              "RelativeToolTip": "Interfaces\\IConservationProcessRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T11:53:28.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "LabelRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Repository\\LabelRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\LabelRepository.cs",
+              "ToolTip": "C:\\Users\\pedro\\source\\repos\\WebApiEtiqueCerta\\Repository\\LabelRepository.cs",
+              "RelativeToolTip": "Repository\\LabelRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:14:20.782Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -18,7 +18,7 @@ namespace WebApiEtiqueCerta.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody] LabelViewModel _label)
+        public IActionResult Create([FromBody] PostLabelViewModel _label)
         {
             Label label = new Label
             {

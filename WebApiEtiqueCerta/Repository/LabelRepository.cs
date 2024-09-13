@@ -1,5 +1,6 @@
 ﻿using WebApiEtiqueCerta.Interfaces;
 using WebApiEtiqueCerta.Models;
+using WebApiEtiqueCerta.ViewModels;
 
 namespace WebApiEtiqueCerta.Repository
 {
@@ -13,15 +14,19 @@ namespace WebApiEtiqueCerta.Repository
             ctx.SaveChanges();
         }
 
-        public List<Label> GetAll()
+        public List<GetLabelViewModel> GetAll()
         {
-            return ctx.Labels.Select(u => new Label
+            return ctx.Labels.Select(u => new GetLabelViewModel
             {
                 Id = u.Id,
                 Name = u.Name,
                 Id_legislation = u.Id_legislation,
-                IdLegislationNavigation =  ctx.Legislations.FirstOrDefault(x => x.Id == u.Id_legislation),
-                LabelSymbologies = u.LabelSymbologies
+                Selected_symbology = ctx.SymbologyTranslates.Where(x => x.IdLegislation == u.Id_legislation).Select(x => new SelectedSymbologyViewModel
+                {
+                    Id = x.Id,
+                    Id_process = ctx.Symbologies.FirstOrDefault(z => z.Id == x.IdSymbology)!.IdProcess,
+                    Translate = u.Name
+                }).ToList()
             }).ToList();
         }
 

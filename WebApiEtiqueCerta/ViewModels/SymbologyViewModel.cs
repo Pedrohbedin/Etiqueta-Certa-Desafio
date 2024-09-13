@@ -4,5 +4,6 @@
     {
         public Guid Id { get; set; }
         public string? Translate { get; set; }
+
     }
 }

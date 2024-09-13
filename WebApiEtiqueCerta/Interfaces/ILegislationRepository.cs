@@ -5,7 +5,7 @@ namespace WebApiEtiqueCerta.Interfaces
 {
     public interface ILegislationRepository
     {
-        List<LegislationViewModel> GetAll();
+        List<GetLegislationViewModel> GetAll();
         void Create(Legislation legislation);
 
     }

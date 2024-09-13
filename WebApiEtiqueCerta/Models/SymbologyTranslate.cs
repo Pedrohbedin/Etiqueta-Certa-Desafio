@@ -5,7 +5,7 @@ namespace WebApiEtiqueCerta.Models;
 
 public partial class SymbologyTranslate
 {
-    public Guid Id { get; set; }
+    public Guid Id { get; set; } = Guid.NewGuid();
 
     public Guid IdSymbology { get; set; }
 

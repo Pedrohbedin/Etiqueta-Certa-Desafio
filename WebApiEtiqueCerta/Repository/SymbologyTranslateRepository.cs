@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults;
+using System.Linq;
 using WebApiEtiqueCerta.Interfaces;
 using WebApiEtiqueCerta.Models;
 
@@ -18,13 +19,30 @@ namespace WebApiEtiqueCerta.Repository
             return ctx.SymbologyTranslates.ToList();
         }
 
-        public bool CheckExist(SymbologyTranslate symbologyTranslate)
+        public bool CheckExist(SymbologyTranslate symbologyTranslate, Guid idProcess)
         {
-           if( ctx.SymbologyTranslates.FirstOrDefault(s => s.IdSymbology == symbologyTranslate.IdSymbology && s.IdLegislation == symbologyTranslate.IdLegislation) != null)
-           {
-                return true;
-           }
-           return false;
+            //Rever aqui
+            SymbologyTranslate _symbologyTranslate = ctx.SymbologyTranslates.FirstOrDefault(s => s.IdSymbology == symbologyTranslate.IdSymbology)!;
+
+            if (_symbologyTranslate != null)
+            {
+                if (ctx.Symbologies.FirstOrDefault(x => x.Id == _symbologyTranslate.IdSymbology)!.IdProcess != idProcess)
+                {
+                    return true;
+                }
+            }
+
+            if (_symbologyTranslate != null)
+            {
+                if (_symbologyTranslate.IdLegislation == symbologyTranslate.IdLegislation)
+                {
+
+                    return true;
+
+                }
+            }
+
+            return false;
         }
     }
 }

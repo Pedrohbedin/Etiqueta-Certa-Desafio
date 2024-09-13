@@ -4,6 +4,6 @@
     {
         List<SymbologyTranslate> GetAll();
         void Create(SymbologyTranslate symbologyTranslate);
-        bool CheckExist(SymbologyTranslate symbologyTranslate);
+        bool CheckExist(SymbologyTranslate symbologyTranslate, Guid idProcess);
     }
 }

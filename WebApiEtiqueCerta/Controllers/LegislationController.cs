@@ -23,7 +23,7 @@ namespace WebApiEtiqueCerta.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(LegislationViewModel _legislation)
+        public IActionResult Create([FromBody]PostLegislationViewModel _legislation)
         {
             try
             {
@@ -52,9 +52,16 @@ namespace WebApiEtiqueCerta.Controllers
                             IdLegislation = legislation.Id,
                             Translate = symbology.Translate
                         };
-                        if(!_symbologyTranslateContext.CheckExist(symbologyTranslate))
+
+                        if (!_symbologyTranslateContext.CheckExist(symbologyTranslate, item.Id_process))
                         {
+
                             _symbologyTranslateContext.Create(symbologyTranslate);
+
+                        }
+                        else
+                        {
+                            return BadRequest("Error in entering data, please review it");
                         }
                     };
 
@@ -65,7 +72,7 @@ namespace WebApiEtiqueCerta.Controllers
             catch (Exception ex)
             {
 
-                return BadRequest(ex.Message);
+                return BadRequest("Legislation not created, Error: " + ex.Message);
             }
         }
 

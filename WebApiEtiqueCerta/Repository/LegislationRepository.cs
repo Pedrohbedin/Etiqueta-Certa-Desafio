@@ -1,6 +1,7 @@
 ﻿using WebApiEtiqueCerta.Interfaces;
 using WebApiEtiqueCerta.Models;
 using WebApiEtiqueCerta.ViewModels;
+using Microsoft.EntityFrameworkCore;
 
 namespace WebApiEtiqueCerta.Repository
 {
@@ -13,10 +14,11 @@ namespace WebApiEtiqueCerta.Repository
             ctx.SaveChanges(); 
         }
 
-        public List<LegislationViewModel> GetAll()
+        public List<GetLegislationViewModel> GetAll()
         {
-            var result = ctx.Legislations.Select(u => new LegislationViewModel
+            var result = ctx.Legislations.Select(u => new GetLegislationViewModel
             {
+                Id = u.Id,
                 Name = u.Name,
                 Official_language = u.Official_language,
                 Conservation_process = ctx.ProcessInLegislations.Where(y => y.IdLegislation == u.Id).Select(p => new ConservationProcessesViewModel
@@ -26,7 +28,7 @@ namespace WebApiEtiqueCerta.Repository
                     {
                         Id = s.IdSymbology,
                         Translate = s.Translate
-                    }).ToList()
+                    }).ToList(),
                 }).ToList(),
                 CreatedAt = u.CreatedAt,
                 UpdatedAt = u.UpdatedAt

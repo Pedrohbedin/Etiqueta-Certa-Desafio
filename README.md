@@ -1,6 +1,6 @@
 # Etiqueta Certa - Desafio
 
-##Tecnologias 
+## Tecnologias 
 - .NET
 - SQL SERVER
 

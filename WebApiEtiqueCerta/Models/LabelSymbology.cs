@@ -7,7 +7,7 @@ public partial class LabelSymbology
 {
     public Guid Id { get; set; }
 
-    public Guid? IdSymbology { get; set; }
+    public Guid IdSymbology { get; set; }
 
     public Guid? IdLabel { get; set; }
 

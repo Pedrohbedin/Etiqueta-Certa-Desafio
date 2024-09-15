@@ -2,7 +2,9 @@
 using WebApiEtiqueCerta.Interfaces;
 using WebApiEtiqueCerta.Models;
 using WebApiEtiqueCerta.Repository;
-using WebApiEtiqueCerta.ViewModels;
+using WebApiEtiqueCerta.ViewModels.ConservationProcesses;
+using WebApiEtiqueCerta.ViewModels.Legislation;
+using WebApiEtiqueCerta.ViewModels.Symbology;
 
 namespace WebApiEtiqueCerta.Controllers
 {
@@ -27,11 +29,10 @@ namespace WebApiEtiqueCerta.Controllers
         {
             try
             {
-                Legislation legislation = new Legislation
-                {
-                    Name = _legislation.Name,
-                    Official_language = _legislation.Official_language,
-                };
+                Legislation legislation = new Legislation();
+
+                legislation.Name = _legislation.Name;
+                legislation.Official_language = _legislation.Official_language;
 
                 _context.Create(legislation);
 
@@ -64,9 +65,9 @@ namespace WebApiEtiqueCerta.Controllers
                             return BadRequest("Error in entering data, please review it");
                         }
                     };
-
                     _processInLegislationContext.Create(processInLegislation);
                 }
+
                 return Ok();
             }
             catch (Exception ex)

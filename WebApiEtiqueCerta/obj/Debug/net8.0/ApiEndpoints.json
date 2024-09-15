@@ -9,28 +9,7 @@
     "Parameters": [
       {
         "Name": "_label",
-        "Type": "WebApiEtiqueCerta.ViewModels.PostLabelViewModel",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebApiEtiqueCerta.Controllers.LabelController",
-    "Method": "Update",
-    "RelativePath": "api/Label",
-    "HttpMethod": "PATCH",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Type": "System.Guid",
-        "IsRequired": false
-      },
-      {
-        "Name": "label",
-        "Type": "WebApiEtiqueCerta.Models.Label",
+        "Type": "WebApiEtiqueCerta.ViewModels.Label.PostLabelViewModel",
         "IsRequired": true
       }
     ],
@@ -47,6 +26,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "WebApiEtiqueCerta.Controllers.LabelController",
+    "Method": "Update",
+    "RelativePath": "api/Label/{Id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "label",
+        "Type": "WebApiEtiqueCerta.ViewModels.Label.PatchLabelViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebApiEtiqueCerta.Controllers.LegislationController",
     "Method": "Create",
     "RelativePath": "api/Legislation",
@@ -56,7 +56,7 @@
     "Parameters": [
       {
         "Name": "_legislation",
-        "Type": "WebApiEtiqueCerta.ViewModels.PostLegislationViewModel",
+        "Type": "WebApiEtiqueCerta.ViewModels.Legislation.PostLegislationViewModel",
         "IsRequired": true
       }
     ],

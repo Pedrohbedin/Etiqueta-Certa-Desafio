@@ -1,6 +1,7 @@
 ﻿using System.Text.Json.Serialization;
+using WebApiEtiqueCerta.ViewModels.ConservationProcesses;
 
-namespace WebApiEtiqueCerta.ViewModels
+namespace WebApiEtiqueCerta.ViewModels.Legislation
 {
     public class PostLegislationViewModel
     {

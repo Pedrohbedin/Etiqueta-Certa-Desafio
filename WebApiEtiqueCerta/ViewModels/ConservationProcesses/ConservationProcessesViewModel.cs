@@ -1,4 +1,6 @@
-﻿namespace WebApiEtiqueCerta.ViewModels
+﻿using WebApiEtiqueCerta.ViewModels.Symbology;
+
+namespace WebApiEtiqueCerta.ViewModels.ConservationProcesses
 {
     public class ConservationProcessesViewModel
     {

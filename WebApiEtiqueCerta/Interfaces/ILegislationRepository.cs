@@ -1,5 +1,5 @@
 ﻿using WebApiEtiqueCerta.Models;
-using WebApiEtiqueCerta.ViewModels;
+using WebApiEtiqueCerta.ViewModels.Legislation;
 
 namespace WebApiEtiqueCerta.Interfaces
 {

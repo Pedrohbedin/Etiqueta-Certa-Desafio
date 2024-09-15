@@ -2,6 +2,9 @@
 using WebApiEtiqueCerta.Models;
 using WebApiEtiqueCerta.ViewModels;
 using Microsoft.EntityFrameworkCore;
+using WebApiEtiqueCerta.ViewModels.Legislation;
+using WebApiEtiqueCerta.ViewModels.ConservationProcesses;
+using WebApiEtiqueCerta.ViewModels.Symbology;
 
 namespace WebApiEtiqueCerta.Repository
 {

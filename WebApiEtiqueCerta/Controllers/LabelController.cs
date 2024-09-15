@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebApiEtiqueCerta.Interfaces;
 using WebApiEtiqueCerta.Repository;
-using WebApiEtiqueCerta.ViewModels;
+using WebApiEtiqueCerta.ViewModels.Label;
 
 namespace WebApiEtiqueCerta.Controllers
 {
@@ -38,8 +38,8 @@ namespace WebApiEtiqueCerta.Controllers
             }
         }
 
-        [HttpPatch]
-        public IActionResult Update(Guid Id, Label label)
+        [HttpPatch("{Id}")]
+        public IActionResult Update([FromRoute] Guid Id, PatchLabelViewModel label)
         {
             try
             {

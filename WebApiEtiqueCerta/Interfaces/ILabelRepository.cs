@@ -1,5 +1,5 @@
 ﻿using WebApiEtiqueCerta.Models;
-using WebApiEtiqueCerta.ViewModels;
+using WebApiEtiqueCerta.ViewModels.Label;
 
 namespace WebApiEtiqueCerta.Interfaces
 {
@@ -7,6 +7,6 @@ namespace WebApiEtiqueCerta.Interfaces
     {
         List<GetLabelViewModel> GetAll();
         void Create(Label label);
-        void Update(Label label, Guid id);
+        void Update(PatchLabelViewModel label, Guid id);
     }
 }

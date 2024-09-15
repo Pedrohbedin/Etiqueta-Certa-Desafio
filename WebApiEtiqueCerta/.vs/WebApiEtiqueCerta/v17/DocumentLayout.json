@@ -3,44 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\onedrive\\desktop\\etiqueta-certa-desafio\\webapietiquecerta\\controllers\\legislationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:controllers\\legislationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\onedrive\\desktop\\etiqueta-certa-desafio\\webapietiquecerta\\interfaces\\isymbologytranslaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:interfaces\\isymbologytranslaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\onedrive\\desktop\\etiqueta-certa-desafio\\webapietiquecerta\\repository\\processinlegislationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:repository\\processinlegislationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\onedrive\\desktop\\etiqueta-certa-desafio\\webapietiquecerta\\models\\symbologytranslate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:models\\symbologytranslate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\onedrive\\desktop\\etiqueta-certa-desafio\\webapietiquecerta\\repository\\symbologytranslaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:repository\\symbologytranslaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\onedrive\\desktop\\etiqueta-certa-desafio\\webapietiquecerta\\viewmodels\\selectedsymbologyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:viewmodels\\selectedsymbologyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\onedrive\\desktop\\etiqueta-certa-desafio\\webapietiquecerta\\repository\\legislationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:repository\\legislationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\onedrive\\desktop\\etiqueta-certa-desafio\\webapietiquecerta\\controllers\\labelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:controllers\\labelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\onedrive\\desktop\\etiqueta-certa-desafio\\webapietiquecerta\\controllers\\legislationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:controllers\\legislationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\onedrive\\desktop\\etiqueta-certa-desafio\\webapietiquecerta\\repository\\labelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:repository\\labelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\onedrive\\desktop\\etiqueta-certa-desafio\\webapietiquecerta\\models\\label.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:models\\label.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\onedrive\\desktop\\etiqueta-certa-desafio\\webapietiquecerta\\repository\\processinlegislationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:repository\\processinlegislationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\onedrive\\desktop\\etiqueta-certa-desafio\\webapietiquecerta\\repository\\conservationprocessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:repository\\conservationprocessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,133 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ISymbologyTranslateRepository.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\Interfaces\\ISymbologyTranslateRepository.cs",
-              "RelativeDocumentMoniker": "Interfaces\\ISymbologyTranslateRepository.cs",
-              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\Interfaces\\ISymbologyTranslateRepository.cs",
-              "RelativeToolTip": "Interfaces\\ISymbologyTranslateRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T14:22:22.418Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProcessInLegislationRepository.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\Repository\\ProcessInLegislationRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\ProcessInLegislationRepository.cs",
-              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\Repository\\ProcessInLegislationRepository.cs",
-              "RelativeToolTip": "Repository\\ProcessInLegislationRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T14:21:24.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SymbologyTranslate.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\Models\\SymbologyTranslate.cs",
-              "RelativeDocumentMoniker": "Models\\SymbologyTranslate.cs",
-              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\Models\\SymbologyTranslate.cs",
-              "RelativeToolTip": "Models\\SymbologyTranslate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T14:14:31.46Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SymbologyTranslateRepository.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\Repository\\SymbologyTranslateRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\SymbologyTranslateRepository.cs",
-              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\Repository\\SymbologyTranslateRepository.cs",
-              "RelativeToolTip": "Repository\\SymbologyTranslateRepository.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAqwCQAAABZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T14:07:35.986Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "LegislationController.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\Controllers\\LegislationController.cs",
               "RelativeDocumentMoniker": "Controllers\\LegislationController.cs",
               "ToolTip": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\Controllers\\LegislationController.cs",
               "RelativeToolTip": "Controllers\\LegislationController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAUwDQAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAmwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T13:47:14.788Z",
+              "WhenOpened": "2024-09-15T21:48:20.673Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SelectedSymbologyViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\ViewModels\\SelectedSymbologyViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\SelectedSymbologyViewModel.cs",
-              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\ViewModels\\SelectedSymbologyViewModel.cs",
-              "RelativeToolTip": "ViewModels\\SelectedSymbologyViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T13:34:22.602Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Label.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\Models\\Label.cs",
-              "RelativeDocumentMoniker": "Models\\Label.cs",
-              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\Models\\Label.cs",
-              "RelativeToolTip": "Models\\Label.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T13:31:01.897Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "LabelRepository.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\Repository\\LabelRepository.cs",
               "RelativeDocumentMoniker": "Repository\\LabelRepository.cs",
               "ToolTip": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\Repository\\LabelRepository.cs",
               "RelativeToolTip": "Repository\\LabelRepository.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAIwBwAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T13:30:28.844Z"
+              "WhenOpened": "2024-09-15T21:48:04.692Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "LegislationRepository.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\Repository\\LegislationRepository.cs",
               "RelativeDocumentMoniker": "Repository\\LegislationRepository.cs",
               "ToolTip": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\Repository\\LegislationRepository.cs",
               "RelativeToolTip": "Repository\\LegislationRepository.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBIAAABRAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAACwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T13:30:12.511Z"
+              "WhenOpened": "2024-09-15T21:45:56.799Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LabelController.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\Controllers\\LabelController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LabelController.cs",
-              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\Controllers\\LabelController.cs",
-              "RelativeToolTip": "Controllers\\LabelController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwDcAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ProcessInLegislationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\Repository\\ProcessInLegislationRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\ProcessInLegislationRepository.cs",
+              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\Repository\\ProcessInLegislationRepository.cs",
+              "RelativeToolTip": "Repository\\ProcessInLegislationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T13:29:25.503Z"
+              "WhenOpened": "2024-09-15T21:45:55.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ConservationProcessRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\Repository\\ConservationProcessRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\ConservationProcessRepository.cs",
+              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\Repository\\ConservationProcessRepository.cs",
+              "RelativeToolTip": "Repository\\ConservationProcessRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T21:45:44.706Z",
+              "EditorCaption": ""
             }
           ]
         }

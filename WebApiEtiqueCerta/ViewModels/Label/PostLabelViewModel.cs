@@ -1,4 +1,4 @@
-﻿namespace WebApiEtiqueCerta.ViewModels
+﻿namespace WebApiEtiqueCerta.ViewModels.Label
 {
     public class PostLabelViewModel
     {

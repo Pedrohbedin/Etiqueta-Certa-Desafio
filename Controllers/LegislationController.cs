@@ -29,51 +29,13 @@ namespace WebApiEtiqueCerta.Controllers
         {
             try
             {
-                Legislation legislation = new Legislation();
-
-                legislation.Name = _legislation.Name;
-                legislation.Official_language = _legislation.Official_language;
-
-                _context.Create(legislation);
-
-                foreach (ConservationProcessesViewModel item in _legislation.Conservation_process!)
-                {
-
-                    ProcessInLegislation processInLegislation = new ProcessInLegislation
-                    {
-                        IdLegislation = legislation.Id,
-                        IdProcess = item.Id_process
-                    };
-
-                    foreach (SymbologyViewModel symbology in item.Symbology!)
-                    {
-                        SymbologyTranslate symbologyTranslate = new SymbologyTranslate
-                        {
-                            IdSymbology = symbology.Id,
-                            IdLegislation = legislation.Id,
-                            Translate = symbology.Translate
-                        };
-
-                        if (!_symbologyTranslateContext.CheckExist(symbologyTranslate, item.Id_process))
-                        {
-
-                            _symbologyTranslateContext.Create(symbologyTranslate);
-
-                        }
-                        else
-                        {
-                            return BadRequest("Error in entering data, please review it");
-                        }
-                    };
-                    _processInLegislationContext.Create(processInLegislation);
-                }
-
+                _context.Create(_legislation);
                 return Ok();
             }
             catch (Exception ex)
             {
 
-                return BadRequest("Legislation not created, Error: " + ex.Message);
+                return BadRequest(ex.Message);
             }
         }
 

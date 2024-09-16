@@ -5017,11 +5017,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\WebApiEtiqueCerta.csproj",
+      "projectUniqueName": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta.csproj",
       "projectName": "WebApiEtiqueCerta",
-      "projectPath": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\WebApiEtiqueCerta.csproj",
+      "projectPath": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta.csproj",
       "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\WebApiEtiqueCerta\\obj\\",
+      "outputPath": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",

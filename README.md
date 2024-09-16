@@ -81,7 +81,6 @@ CREATE TABLE ProcessInLegislation(
 );
 GO
 
--- Inserção de dados na tabela ConservationProcess
 INSERT INTO ConservationProcess (name) VALUES
 ('Lavagem'),
 ('Alvejamento'),
@@ -90,7 +89,6 @@ INSERT INTO ConservationProcess (name) VALUES
 ('Limpeza profissional');
 GO
 
--- Inserção de dados na tabela Symbology
 INSERT INTO Symbology (id_process, name, description, url)
 VALUES 
 ((SELECT id FROM ConservationProcess WHERE name = 'Lavagem'), 'lavagem-30-graus', 'Lavagem normal com temperatura máxima de 30 graus celsius', 'https://www.maison-travaux.fr/wp-content/uploads/sites/8/2018/08/un-rincage-normal-et-un-essorage-reduit.gif'),

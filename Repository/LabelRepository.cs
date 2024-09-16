@@ -10,6 +10,12 @@ namespace WebApiEtiqueCerta.Repository
     {
         etiquetaCertaContext ctx = new etiquetaCertaContext();
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="label"></param>
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="InvalidOperationException"></exception>
         public void Create(Label label)
         {
             if (label == null)
@@ -19,6 +25,7 @@ namespace WebApiEtiqueCerta.Repository
 
             
             var existinglabel = ctx.Labels.FirstOrDefault(x => x.Id_legislation == label.Id_legislation);
+
             if(existinglabel != null)
             {
                 throw new InvalidOperationException("Já existe uma label associada a está legislation");
@@ -26,12 +33,12 @@ namespace WebApiEtiqueCerta.Repository
 
             ctx.Labels.Add(label);
             ctx.SaveChanges();
-            
-            
-            
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public List<GetLabelViewModel> GetAll()
         {
             // Recupera todos os dados necessários em uma única consulta
@@ -79,7 +86,11 @@ namespace WebApiEtiqueCerta.Repository
             }).ToList();
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public Label GetById(Guid id)
         {
             Label label = ctx.Labels.Find(id)!;
@@ -94,13 +105,20 @@ namespace WebApiEtiqueCerta.Repository
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="label"></param>
+        /// <param name="id"></param>
+        /// <exception cref="Exception"></exception>
+        /// <exception cref="ArgumentException"></exception>
         public void Update(PatchLabelViewModel label, Guid id)
         {
             // Recupera o Label a ser atualizado
             var labelToUpdate = ctx.Labels.FirstOrDefault(x => x.Id_legislation == id);
             if (labelToUpdate == null)
             {
-                throw new Exception("Label não encontrado para o Id_legislation fornecido.");
+                throw new Exception("Label não encontrado para a legislação fornecida.");
             }
 
             // Atualiza o timestamp do Label
@@ -108,6 +126,7 @@ namespace WebApiEtiqueCerta.Repository
 
             // Recupera a Legislation associada e atualiza o timestamp
             var legislation = ctx.Legislations.FirstOrDefault(l => l.Id == labelToUpdate.Id_legislation);
+
             if (legislation != null)
             {
                 legislation.UpdatedAt = DateTime.UtcNow;
@@ -115,7 +134,7 @@ namespace WebApiEtiqueCerta.Repository
 
             // Cria um dicionário para armazenar os SymbologyTranslates
             var symbologyTranslates = ctx.SymbologyTranslates
-                .Where(st => label.Selected_symbology.Contains(st.IdSymbology)
+                .Where(st => label.Selected_symbology!.Contains(st.IdSymbology)
                              && st.IdLegislation == labelToUpdate.Id_legislation)
                 .ToDictionary(st => st.IdSymbology, st => st);
 
@@ -124,7 +143,7 @@ namespace WebApiEtiqueCerta.Repository
 
             HashSet<Guid> uniqueSymbol = new HashSet<Guid>();
 
-            foreach (var item in label.Selected_symbology)
+            foreach (var item in label.Selected_symbology!)
             {
                 // Verifica se o processo já foi adicionado no HashSet para garantir a unicidade
                 if (uniqueSymbol.Contains(item))
@@ -150,6 +169,7 @@ namespace WebApiEtiqueCerta.Repository
                 {
                     // Busca a simbologia existente e a nova para comparar os processos
                     var existingSymbology = ctx.Symbologies.FirstOrDefault(x => x.Id == existingLabelSymbology.IdSymbology);
+
                     var newSymbology = ctx.Symbologies.FirstOrDefault(x => x.Id == item);
 
                     if (existingSymbology != null && newSymbology != null)

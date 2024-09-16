@@ -18,6 +18,11 @@ namespace WebApiEtiqueCerta.Controllers
             _labelRepository = new LabelRepository();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="labelViewModel"></param>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult Create([FromBody] PostLabelViewModel labelViewModel)
         {

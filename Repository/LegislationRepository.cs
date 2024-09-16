@@ -13,6 +13,12 @@ namespace WebApiEtiqueCerta.Repository
     public class LegislationRepository : ILegislationRepository
     {
         etiquetaCertaContext ctx = new etiquetaCertaContext();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="_legislation"></param>
+        /// <exception cref="ArgumentException"></exception>
         public void Create(PostLegislationViewModel _legislation)
         {
             // Cria nova instância de Legislation e adiciona as informações básicas
@@ -96,7 +102,10 @@ namespace WebApiEtiqueCerta.Repository
         }
 
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public List<GetLegislationViewModel> GetAll()
         {
             var result = ctx.Legislations

@@ -1,54 +1,47 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebApiEtiqueCerta.Interfaces;
-using WebApiEtiqueCerta.Models;
-using WebApiEtiqueCerta.Repository;
-using WebApiEtiqueCerta.ViewModels.ConservationProcesses;
 using WebApiEtiqueCerta.ViewModels.Legislation;
-using WebApiEtiqueCerta.ViewModels.Symbology;
+using System;
+using WebApiEtiqueCerta.Repository;
 
 namespace WebApiEtiqueCerta.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     [Produces("application/json")]
-    public class LegislationController : Controller
+    public class LegislationController : ControllerBase
     {
-        private readonly ILegislationRepository _context;
-        private readonly ISymbologyTranslateRepository _symbologyTranslateContext;
-        private readonly IProcessInLegislation _processInLegislationContext;
+        private readonly ILegislationRepository _legislationRepository;
 
         public LegislationController()
         {
-            _context = new LegislationRepository();
-            _symbologyTranslateContext = new SymbologyTranslateRepository();
-            _processInLegislationContext = new ProcessInLegislationRepository();
+            _legislationRepository = new LegislationRepository();
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody]PostLegislationViewModel _legislation)
+        public IActionResult Create([FromBody] PostLegislationViewModel legislationViewModel)
         {
             try
             {
-                _context.Create(_legislation);
-                return Ok();
+                _legislationRepository.Create(legislationViewModel);
+                return Ok("Legislation cadastrada com sucesso.");
             }
             catch (Exception ex)
             {
-
                 return BadRequest(ex.Message);
             }
         }
 
         [HttpGet]
-        public IActionResult GetAll()
+        public ActionResult GetAll()
         {
             try
             {
-                return Ok(_context.GetAll());
+                var legislations = _legislationRepository.GetAll();
+                return Ok(legislations);
             }
             catch (Exception ex)
             {
-
                 return BadRequest(ex.Message);
             }
         }

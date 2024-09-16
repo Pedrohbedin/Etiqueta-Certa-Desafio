@@ -1,50 +1,50 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebApiEtiqueCerta.Interfaces;
-using WebApiEtiqueCerta.Repository;
 using WebApiEtiqueCerta.ViewModels.Label;
+using System;
+using WebApiEtiqueCerta.Repository;
 
 namespace WebApiEtiqueCerta.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     [Produces("application/json")]
-    public class LabelController : Controller
+    public class LabelController : ControllerBase
     {
-        private readonly ILabelRepository _context;
+        private readonly ILabelRepository _labelRepository;
 
         public LabelController()
         {
-            _context = new LabelRepository();
+            _labelRepository = new LabelRepository();
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody] PostLabelViewModel _label)
+        public IActionResult Create([FromBody] PostLabelViewModel labelViewModel)
         {
-            Label label = new Label
+            var label = new Label
             {
-                Name = _label.Name,
-                Id_legislation = _label.Id_legislation
+                Name = labelViewModel.Name,
+                Id_legislation = labelViewModel.Id_legislation
             };
 
             try
             {
-                _context.Create(label);
-                return Ok();
+                _labelRepository.Create(label);
+                return Ok("Label cadastrada com sucesso.");
             }
             catch (Exception ex)
             {
-
                 return BadRequest(ex.Message);
             }
         }
 
-        [HttpPatch("{Id}")]
-        public IActionResult Update([FromRoute] Guid Id, PatchLabelViewModel label)
+        [HttpPatch("{id:guid}")]
+        public IActionResult Update([FromRoute] Guid id, [FromBody] PatchLabelViewModel labelViewModel)
         {
             try
             {
-                _context.Update(label, Id);
-                return Ok();
+                _labelRepository.Update(labelViewModel, id);
+                return Ok("Label atualizada com sucesso.");
             }
             catch (Exception ex)
             {
@@ -53,15 +53,15 @@ namespace WebApiEtiqueCerta.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAll()
+        public ActionResult GetAll()
         {
             try
             {
-                return Ok(_context.GetAll());
+                var labels = _labelRepository.GetAll();
+                return Ok(labels);
             }
             catch (Exception ex)
             {
-
                 return BadRequest(ex.Message);
             }
         }

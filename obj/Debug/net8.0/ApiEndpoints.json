@@ -8,7 +8,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "_label",
+        "Name": "labelViewModel",
         "Type": "WebApiEtiqueCerta.ViewModels.Label.PostLabelViewModel",
         "IsRequired": true
       }
@@ -28,18 +28,18 @@
   {
     "ContainingType": "WebApiEtiqueCerta.Controllers.LabelController",
     "Method": "Update",
-    "RelativePath": "api/Label/{Id}",
+    "RelativePath": "api/Label/{id}",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
+        "Name": "id",
         "Type": "System.Guid",
         "IsRequired": true
       },
       {
-        "Name": "label",
+        "Name": "labelViewModel",
         "Type": "WebApiEtiqueCerta.ViewModels.Label.PatchLabelViewModel",
         "IsRequired": true
       }
@@ -55,7 +55,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "_legislation",
+        "Name": "legislationViewModel",
         "Type": "WebApiEtiqueCerta.ViewModels.Legislation.PostLegislationViewModel",
         "IsRequired": true
       }

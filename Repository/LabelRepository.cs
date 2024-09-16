@@ -17,16 +17,18 @@ namespace WebApiEtiqueCerta.Repository
                 throw new ArgumentNullException(nameof(label), "O label não pode ser nulo.");
             }
 
-            try
+            
+            var existinglabel = ctx.Labels.FirstOrDefault(x => x.Id_legislation == label.Id_legislation);
+            if(existinglabel != null)
             {
-                ctx.Labels.Add(label);
+                throw new InvalidOperationException("Já existe uma label associada a está legislation");
+            }
 
-                ctx.SaveChanges();
-            }
-            catch (Exception ex)
-            {
-                throw new InvalidOperationException("Não foi possível adicionar o label ao banco de dados.", ex);
-            }
+            ctx.Labels.Add(label);
+            ctx.SaveChanges();
+            
+            
+            
         }
 
 

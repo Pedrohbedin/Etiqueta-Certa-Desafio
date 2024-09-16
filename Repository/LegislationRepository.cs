@@ -27,9 +27,21 @@ namespace WebApiEtiqueCerta.Repository
             // Lista para armazenar todos os SymbologyTranslate adicionados para validação posterior
             List<SymbologyTranslate> symbologyTranslatesToValidate = new List<SymbologyTranslate>();
 
+            // HashSet para garantir que não haja duplicatas de process dentro de uma mesma legislation
+            HashSet<Guid> uniqueProcess = new HashSet<Guid>();
+
             // Itera pelos processos de conservação
             foreach (var processViewModel in _legislation.Conservation_process)
             {
+                // Verifica se o processos já foi adicionada no HashSet para esse processo
+                if (uniqueProcess.Contains(processViewModel.Id_process))
+                {
+                    throw new ArgumentException("Simbologias duplicadas, tente novamente");
+                }
+
+                // Adiciona processo ao HashSet para garantir unicidade
+                uniqueProcess.Add(processViewModel.Id_process);
+
                 // Cria uma instância de ProcessInLegislation
                 ProcessInLegislation processInLegislation = new ProcessInLegislation
                 {
@@ -93,26 +105,35 @@ namespace WebApiEtiqueCerta.Repository
 
         public List<GetLegislationViewModel> GetAll()
         {
-            var result = ctx.Legislations.Select(u => new GetLegislationViewModel
-            {
-                Id = u.Id,
-                Name = u.Name,
-                Official_language = u.Official_language,
-                Conservation_process = ctx.ProcessInLegislations.Where(y => y.IdLegislation == u.Id).Select(p => new ConservationProcessesViewModel
+            var result = ctx.Legislations
+                .Select(u => new GetLegislationViewModel
                 {
-                    Id_process = p.IdProcess,
-                    Symbology = ctx.SymbologyTranslates.Where(x => x.IdSymbologyNavigation!.IdProcess == p.IdProcess && x.IdLegislation == u.Id).Select(s => new SymbologyViewModel
-                    {
-                        Id = s.IdSymbology,
-                        Translate = s.Translate
-                    }).ToList(),
-                }).ToList(),
-                CreatedAt = u.CreatedAt,
-                UpdatedAt = u.UpdatedAt
-            }).ToList();
+                    Id = u.Id,
+                    Name = u.Name,
+                    Official_language = u.Official_language,
+                    Conservation_process = ctx.ProcessInLegislations
+                        .Where(p => p.IdLegislation == u.Id)
+                        .Select(p => new ConservationProcessesViewModel
+                        {
+                            Id_process = p.IdProcess,
+                            Symbology = ctx.SymbologyTranslates
+                                .Where(s => s.IdSymbologyNavigation!.IdProcess == p.IdProcess && s.IdLegislation == u.Id)
+                                .Select(s => new SymbologyViewModel
+                                {
+                                    Id = s.IdSymbology,
+                                    Translate = s.Translate
+                                })
+                                .ToList()
+                        })
+                        .ToList(),
+                    CreatedAt = u.CreatedAt,
+                    UpdatedAt = u.UpdatedAt
+                })
+                .ToList();
 
             return result;
         }
+
 
     }
 }

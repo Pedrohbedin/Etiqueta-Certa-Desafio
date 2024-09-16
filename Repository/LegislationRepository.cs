@@ -24,9 +24,6 @@ namespace WebApiEtiqueCerta.Repository
 
             ctx.Legislations.Add(legislation);
 
-            // Lista para armazenar todos os SymbologyTranslate adicionados para validação posterior
-            List<SymbologyTranslate> symbologyTranslatesToValidate = new List<SymbologyTranslate>();
-
             // HashSet para garantir que não haja duplicatas de process dentro de uma mesma legislation
             HashSet<Guid> uniqueProcess = new HashSet<Guid>();
 
@@ -84,9 +81,6 @@ namespace WebApiEtiqueCerta.Repository
                             IdLegislation = legislation.Id,
                             Translate = symbology.Translate
                         };
-
-                        // Adiciona para validação posterior
-                        symbologyTranslatesToValidate.Add(symbologyTranslate);
 
                         // Adiciona ao contexto
                         ctx.SymbologyTranslates.Add(symbologyTranslate);

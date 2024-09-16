@@ -122,8 +122,19 @@ namespace WebApiEtiqueCerta.Repository
             // Cria uma lista para armazenar as novas LabelSymbologies
             var newLabelSymbologies = new List<LabelSymbology>();
 
+            HashSet<Guid> uniqueSymbol = new HashSet<Guid>();
+
             foreach (var item in label.Selected_symbology)
             {
+                // Verifica se o processo já foi adicionado no HashSet para garantir a unicidade
+                if (uniqueSymbol.Contains(item))
+                {
+                    throw new ArgumentException("Simbologias duplicadas, tente novamente.");
+                }
+
+                // Adiciona o item ao HashSet
+                uniqueSymbol.Add(item);
+
                 // Verifica se a SymbologyTranslate existe
                 if (!symbologyTranslates.TryGetValue(item, out var symbologyTranslate))
                 {
@@ -132,31 +143,37 @@ namespace WebApiEtiqueCerta.Repository
 
                 // Verifica se a LabelSymbology já existe
                 var existingLabelSymbology = ctx.LabelSymbologies
-                    .FirstOrDefault(ls => ls.IdLabel == labelToUpdate.Id && ls.IdSymbology == item);
+                    .FirstOrDefault(ls => ls.IdLabel == labelToUpdate.Id);
 
+                // Se já existe a LabelSymbology, compara os processos
                 if (existingLabelSymbology != null)
                 {
-                    // Atualiza LabelSymbology se o processo for o mesmo
+                    // Busca a simbologia existente e a nova para comparar os processos
                     var existingSymbology = ctx.Symbologies.FirstOrDefault(x => x.Id == existingLabelSymbology.IdSymbology);
                     var newSymbology = ctx.Symbologies.FirstOrDefault(x => x.Id == item);
 
-                    if (existingSymbology != null && newSymbology != null && existingSymbology.IdProcess == newSymbology.IdProcess)
+                    if (existingSymbology != null && newSymbology != null)
                     {
-                        existingLabelSymbology.IdSymbology = item;
-                    }
-                    else
-                    {
-                        // Adiciona uma nova LabelSymbology se o processo for diferente
-                        newLabelSymbologies.Add(new LabelSymbology
+                        // Se o processo for o mesmo, atualiza a LabelSymbology
+                        if (existingSymbology.IdProcess == newSymbology.IdProcess)
                         {
-                            IdLabel = labelToUpdate.Id,
-                            IdSymbology = item
-                        });
+                            existingLabelSymbology.IdSymbology = item;  // Atualiza a simbologia
+                            ctx.LabelSymbologies.Update(existingLabelSymbology);  // Atualiza o registro
+                        }
+                        else
+                        {
+                            // Se os processos forem diferentes, adiciona uma nova LabelSymbology
+                            newLabelSymbologies.Add(new LabelSymbology
+                            {
+                                IdLabel = labelToUpdate.Id,
+                                IdSymbology = item
+                            });
+                        }
                     }
                 }
                 else
                 {
-                    // Adiciona uma nova LabelSymbology
+                    // Se a LabelSymbology não existe, adiciona uma nova
                     newLabelSymbologies.Add(new LabelSymbology
                     {
                         IdLabel = labelToUpdate.Id,

@@ -8,7 +8,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "labelViewModel",
+        "Name": "getLabel",
         "Type": "WebApiEtiqueCerta.ViewModels.Label.PostLabelViewModel",
         "IsRequired": true
       }
@@ -39,7 +39,7 @@
         "IsRequired": true
       },
       {
-        "Name": "labelViewModel",
+        "Name": "patchLabel",
         "Type": "WebApiEtiqueCerta.ViewModels.Label.PatchLabelViewModel",
         "IsRequired": true
       }

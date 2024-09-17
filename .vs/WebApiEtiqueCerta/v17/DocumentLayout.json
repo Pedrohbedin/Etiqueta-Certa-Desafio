@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\onedrive\\desktop\\etiqueta-certa-desafio\\context\\etiquetacertacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:context\\etiquetacertacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\onedrive\\desktop\\etiqueta-certa-desafio\\repository\\labelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:repository\\labelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\onedrive\\desktop\\etiqueta-certa-desafio\\repository\\legislationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:repository\\legislationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\onedrive\\desktop\\etiqueta-certa-desafio\\viewmodels\\legislation\\getlegislationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:viewmodels\\legislation\\getlegislationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\onedrive\\desktop\\etiqueta-certa-desafio\\controllers\\legislationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:controllers\\legislationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|c:\\users\\pedro\\onedrive\\desktop\\etiqueta-certa-desafio\\viewmodels\\label\\getlabelviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F8AFE0-AACE-4994-9AD4-AFADFBAF1812}|WebApiEtiqueCerta.csproj|solutionrelative:viewmodels\\label\\getlabelviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +31,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "EtiquetaCertaContext.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\Context\\EtiquetaCertaContext.cs",
+              "RelativeDocumentMoniker": "Context\\EtiquetaCertaContext.cs",
+              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\Context\\EtiquetaCertaContext.cs",
+              "RelativeToolTip": "Context\\EtiquetaCertaContext.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAIwCEAAACjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T13:42:48.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GetLabelViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\ViewModels\\Label\\GetLabelViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\Label\\GetLabelViewModel.cs",
+              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\ViewModels\\Label\\GetLabelViewModel.cs",
+              "RelativeToolTip": "ViewModels\\Label\\GetLabelViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T13:23:22.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetLegislationViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\ViewModels\\Legislation\\GetLegislationViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\Legislation\\GetLegislationViewModel.cs",
+              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\ViewModels\\Legislation\\GetLegislationViewModel.cs",
+              "RelativeToolTip": "ViewModels\\Legislation\\GetLegislationViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T13:23:14.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "LabelRepository.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\Repository\\LabelRepository.cs",
               "RelativeDocumentMoniker": "Repository\\LabelRepository.cs",
               "ToolTip": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\Repository\\LabelRepository.cs",
               "RelativeToolTip": "Repository\\LabelRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAgwHkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T14:41:55.312Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LegislationRepository.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\Repository\\LegislationRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\LegislationRepository.cs",
-              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\Repository\\LegislationRepository.cs",
-              "RelativeToolTip": "Repository\\LegislationRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEgAAABkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T14:41:51.008Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LegislationController.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\Controllers\\LegislationController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LegislationController.cs",
-              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Desktop\\Etiqueta-Certa-Desafio\\Controllers\\LegislationController.cs",
-              "RelativeToolTip": "Controllers\\LegislationController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T14:41:39.928Z",
+              "WhenOpened": "2024-09-17T13:21:50.8Z",
               "EditorCaption": ""
             }
           ]

@@ -9,7 +9,7 @@ public partial class Legislation
 
     public string? Name { get; set; }
 
-    public string? Official_language { get; set; }
+    public string? OfficialLanguage { get; set; }
 
     public DateTime? CreatedAt { get; set; }
 

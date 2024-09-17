@@ -17,6 +17,11 @@ namespace WebApiEtiqueCerta.Controllers
         {
             _legislationRepository = new LegislationRepository();
         }
+        /// <summary>
+        /// Função que adiciona um novo registro de uma Legislation ao banco de dados 
+        /// </summary>
+        /// <param name="legislationViewModel">Parametro que recebe os dados para cadastro de uma nova legislation</param>
+        /// <returns>Retorna sucesso ou algum erro ocorrido no processo</returns>
 
         [HttpPost]
         public IActionResult Create([FromBody] PostLegislationViewModel legislationViewModel)
@@ -31,6 +36,10 @@ namespace WebApiEtiqueCerta.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        /// <summary>
+        /// Função que lista o conjunto de legislations
+        /// </summary>
+        /// <returns>Retorna uma lista de legislations</returns>
 
         [HttpGet]
         public ActionResult GetAll()

@@ -1,4 +1,5 @@
 global using WebApiEtiqueCerta.Models;
+using WebApiEtiqueCerta.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 

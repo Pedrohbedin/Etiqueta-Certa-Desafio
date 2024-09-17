@@ -19,17 +19,17 @@ namespace WebApiEtiqueCerta.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Função que adiciona um novo registro de um Label ao banco de dados.
         /// </summary>
-        /// <param name="labelViewModel"></param>
-        /// <returns></returns>
+        /// <param name="getLabel">Parametro que recebe os dados para cadastro de uma nova label</param>
+        /// <returns>Retorna sucesso no cadastro ou algum erro ocorrido no processo que será recebido do Labelrepository</returns>
         [HttpPost]
-        public IActionResult Create([FromBody] PostLabelViewModel labelViewModel)
+        public IActionResult Create([FromBody] PostLabelViewModel getLabel)
         {
             var label = new Label
             {
-                Name = labelViewModel.Name,
-                Id_legislation = labelViewModel.Id_legislation
+                Name = getLabel.Name,
+                IdLegislation = getLabel.Id_legislation
             };
 
             try
@@ -43,12 +43,19 @@ namespace WebApiEtiqueCerta.Controllers
             }
         }
 
+        /// <summary>
+        ///  Função que atualiza as sombologies associadas a uma dada label.
+        /// </summary>
+        /// <param name="id">Parametro que recebe o id da legilastion que será associada a uma label</param>
+        /// <param name="patchLabel">Parametro que recebe as sombologies que serão atualizadas</param>
+        /// <returns>Retorna sucesso ou um algum erro ocorrido no processo que será recebido do LabelRepository</returns>
+
         [HttpPatch("{id:guid}")]
-        public IActionResult Update([FromRoute] Guid id, [FromBody] PatchLabelViewModel labelViewModel)
+        public IActionResult Update([FromRoute] Guid id, [FromBody] PatchLabelViewModel patchLabel)
         {
             try
             {
-                _labelRepository.Update(labelViewModel, id);
+                _labelRepository.Update(patchLabel, id);
                 return Ok("Label atualizada com sucesso.");
             }
             catch (Exception ex)
@@ -56,6 +63,10 @@ namespace WebApiEtiqueCerta.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        /// <summary>
+        /// Função que lista o conjunto de labels e suas limbologies 
+        /// </summary>
+        /// <returns>Retorna uma lista de labels</returns>
 
         [HttpGet]
         public ActionResult GetAll()

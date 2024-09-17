@@ -1,6 +1,6 @@
 ﻿using System.Linq;
+using WebApiEtiqueCerta.Context;
 using WebApiEtiqueCerta.Interfaces;
-using WebApiEtiqueCerta.Models;
 using WebApiEtiqueCerta.ViewModels;
 using WebApiEtiqueCerta.ViewModels.Label;
 
@@ -11,20 +11,20 @@ namespace WebApiEtiqueCerta.Repository
         etiquetaCertaContext ctx = new etiquetaCertaContext();
 
         /// <summary>
-        /// 
+        /// Função que adiciona um novo registro de Label ao banco de dados
         /// </summary>
-        /// <param name="label"></param>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="InvalidOperationException"></exception>
+        /// <param name="label">Parametro recebido pela controller que será registrado</param>
+        /// <exception cref="ArgumentNullException">Retorno do caso de o label ser nulo</exception>
+        /// <exception cref="InvalidOperationException">Retorno do caso de já existir um label associado a legislation passada</exception>
         public void Create(Label label)
         {
             if (label == null)
             {
-                throw new ArgumentNullException(nameof(label), "O label não pode ser nulo.");
+                throw new ArgumentNullException("O label não pode ser nulo.");
             }
 
             
-            var existinglabel = ctx.Labels.FirstOrDefault(x => x.Id_legislation == label.Id_legislation);
+            var existinglabel = ctx.Labels.FirstOrDefault(x => x.IdLegislation == label.IdLegislation);
 
             if(existinglabel != null)
             {
@@ -36,18 +36,19 @@ namespace WebApiEtiqueCerta.Repository
         }
 
         /// <summary>
-        /// 
+        /// Recupera todas as Labels do banco de dados, incluindo suas simbologias associadas e traduções
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Retorna uma lista de Labels contendo seus detalhes e suas simbologias.</returns>
         public List<GetLabelViewModel> GetAll()
         {
-            // Recupera todos os dados necessários em uma única consulta
             var labels = ctx.Labels
                 .Select(label => new
                 {
                     label.Id,
                     label.Name,
-                    label.Id_legislation,
+                    label.IdLegislation,
+                    label.UpdatedAt,
+                    label.CreatedAt,
                     Symbologies = ctx.LabelSymbologies
                         .Where(ls => ls.IdLabel == label.Id)
                         .Select(ls => new
@@ -69,12 +70,11 @@ namespace WebApiEtiqueCerta.Repository
                 })
                 .ToList();
 
-            // Mapeia os dados para o modelo de visão
             return labels.Select(label => new GetLabelViewModel
             {
                 Id = label.Id,
                 Name = label.Name,
-                Id_legislation = label.Id_legislation,
+                Id_legislation = label.IdLegislation,
                 Selected_symbology = label.Symbologies
                     .Select(symbology => new SelectedSymbologyViewModel
                     {
@@ -82,107 +82,67 @@ namespace WebApiEtiqueCerta.Repository
                         Id_process = symbology.Symbology?.IdProcess ?? Guid.Empty,
                         Translate = symbology.Symbology?.Translate ?? string.Empty
                     })
-                    .ToList()
+                    .ToList(),
+                UpdatedAt = label.UpdatedAt,
+                CreatedAt = label.CreatedAt
             }).ToList();
         }
 
         /// <summary>
-        /// 
+        /// Atualiza uma Label e suas propriedades
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
-        public Label GetById(Guid id)
-        {
-            Label label = ctx.Labels.Find(id)!;
-
-            if(label != null)
-            {
-                return label;
-            }
-            else
-            {
-                return null!;
-            }
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="label"></param>
-        /// <param name="id"></param>
-        /// <exception cref="Exception"></exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <param name="label">Parametro que recebe os dados para atualizar a label</param>
+        /// <param name="id">Parametro que recebe o id da legislation</param>
+        /// <exception cref="Exception">Retorno do caso em que dados não foram encontrados</exception>
+        /// <exception cref="ArgumentException">Retorna do caso em que existem dados duplicados no payload</exception>
         public void Update(PatchLabelViewModel label, Guid id)
         {
-            // Recupera o Label a ser atualizado
-            var labelToUpdate = ctx.Labels.FirstOrDefault(x => x.Id_legislation == id);
+            var labelToUpdate = ctx.Labels.FirstOrDefault(x => x.IdLegislation == id);
             if (labelToUpdate == null)
             {
                 throw new Exception("Label não encontrado para a legislação fornecida.");
             }
 
-            // Atualiza o timestamp do Label
             labelToUpdate.UpdatedAt = DateTime.UtcNow;
 
-            // Recupera a Legislation associada e atualiza o timestamp
-            var legislation = ctx.Legislations.FirstOrDefault(l => l.Id == labelToUpdate.Id_legislation);
-
-            if (legislation != null)
-            {
-                legislation.UpdatedAt = DateTime.UtcNow;
-            }
-
-            // Cria um dicionário para armazenar os SymbologyTranslates
-            var symbologyTranslates = ctx.SymbologyTranslates
-                .Where(st => label.Selected_symbology!.Contains(st.IdSymbology)
-                             && st.IdLegislation == labelToUpdate.Id_legislation)
-                .ToDictionary(st => st.IdSymbology, st => st);
-
-            // Cria uma lista para armazenar as novas LabelSymbologies
             var newLabelSymbologies = new List<LabelSymbology>();
 
             HashSet<Guid> uniqueSymbol = new HashSet<Guid>();
 
             foreach (var item in label.Selected_symbology!)
             {
-                // Verifica se o processo já foi adicionado no HashSet para garantir a unicidade
+                var symbologyTranslates = ctx.SymbologyTranslates.FirstOrDefault(x => x.IdLegislation == id && x.IdSymbology == item);
+
                 if (uniqueSymbol.Contains(item))
                 {
-                    throw new ArgumentException("Simbologias duplicadas, tente novamente.");
+                    throw new ArgumentException("Simbologies duplicados, tente novamente.");
                 }
 
-                // Adiciona o item ao HashSet
                 uniqueSymbol.Add(item);
 
-                // Verifica se a SymbologyTranslate existe
-                if (!symbologyTranslates.TryGetValue(item, out var symbologyTranslate))
+                if (symbologyTranslates == null)
                 {
-                    throw new Exception("SymbologyTranslate não encontrado para o Symbology e Legislation fornecidos.");
+                    throw new Exception("SymbologyTranslate não encontrado");
                 }
 
-                // Verifica se a LabelSymbology já existe
                 var existingLabelSymbology = ctx.LabelSymbologies
                     .FirstOrDefault(ls => ls.IdLabel == labelToUpdate.Id);
 
-                // Se já existe a LabelSymbology, compara os processos
                 if (existingLabelSymbology != null)
                 {
-                    // Busca a simbologia existente e a nova para comparar os processos
                     var existingSymbology = ctx.Symbologies.FirstOrDefault(x => x.Id == existingLabelSymbology.IdSymbology);
 
                     var newSymbology = ctx.Symbologies.FirstOrDefault(x => x.Id == item);
 
                     if (existingSymbology != null && newSymbology != null)
                     {
-                        // Se o processo for o mesmo, atualiza a LabelSymbology
                         if (existingSymbology.IdProcess == newSymbology.IdProcess)
                         {
-                            existingLabelSymbology.IdSymbology = item;  // Atualiza a simbologia
-                            ctx.LabelSymbologies.Update(existingLabelSymbology);  // Atualiza o registro
+                            existingLabelSymbology.IdSymbology = item;
+                            ctx.LabelSymbologies.Update(existingLabelSymbology);
                         }
                         else
                         {
-                            // Se os processos forem diferentes, adiciona uma nova LabelSymbology
                             newLabelSymbologies.Add(new LabelSymbology
                             {
                                 IdLabel = labelToUpdate.Id,
@@ -193,7 +153,6 @@ namespace WebApiEtiqueCerta.Repository
                 }
                 else
                 {
-                    // Se a LabelSymbology não existe, adiciona uma nova
                     newLabelSymbologies.Add(new LabelSymbology
                     {
                         IdLabel = labelToUpdate.Id,
@@ -202,7 +161,6 @@ namespace WebApiEtiqueCerta.Repository
                 }
             }
 
-            // Adiciona as novas LabelSymbologies ao contexto e salva as mudanças
             if (newLabelSymbologies.Any())
             {
                 ctx.LabelSymbologies.AddRange(newLabelSymbologies);

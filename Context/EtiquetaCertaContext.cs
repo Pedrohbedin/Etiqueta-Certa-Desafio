@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace WebApiEtiqueCerta.Models;
+namespace WebApiEtiqueCerta.Context;
 
 public partial class etiquetaCertaContext : DbContext
 {
@@ -30,8 +30,8 @@ public partial class etiquetaCertaContext : DbContext
     public virtual DbSet<SymbologyTranslate> SymbologyTranslates { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server = NOTE01-S21; DataBase = EtiquetaCerta; User Id = sa; Pwd = Senai@134; TrustServerCertificate = true");
+        // ALTERAR AQUI
+        => optionsBuilder.UseSqlServer("Server = DESKTOP-74E5MF8\\SQLEXPRESS; DataBase = EtiquetaCerta; TrustServerCertificate = true; Integrated Security=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -70,7 +70,7 @@ public partial class etiquetaCertaContext : DbContext
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
                 .HasColumnName("created_at");
-            entity.Property(e => e.Id_legislation).HasColumnName("id_legislation");
+            entity.Property(e => e.IdLegislation).HasColumnName("id_legislation");
             entity.Property(e => e.Name)
                 .HasMaxLength(100)
                 .HasColumnName("name");
@@ -80,7 +80,7 @@ public partial class etiquetaCertaContext : DbContext
                 .HasColumnName("updated_at");
 
             entity.HasOne(d => d.IdLegislationNavigation).WithMany(p => p.Labels)
-                .HasForeignKey(d => d.Id_legislation)
+                .HasForeignKey(d => d.IdLegislation)
                 .HasConstraintName("FK__Label__id_legisl__49C3F6B7");
         });
 
@@ -121,7 +121,7 @@ public partial class etiquetaCertaContext : DbContext
             entity.Property(e => e.Name)
                 .HasMaxLength(100)
                 .HasColumnName("name");
-            entity.Property(e => e.Official_language)
+            entity.Property(e => e.OfficialLanguage)
                 .HasMaxLength(100)
                 .HasColumnName("official_language");
             entity.Property(e => e.UpdatedAt)

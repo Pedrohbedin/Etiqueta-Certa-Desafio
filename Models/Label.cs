@@ -10,7 +10,7 @@ public partial class Label
 
     public string? Name { get; set; }
 
-    public Guid? Id_legislation { get; set; }
+    public Guid? IdLegislation { get; set; }
 
     [JsonIgnore]
     public DateTime? CreatedAt { get; set; } = default(DateTime?);

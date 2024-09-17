@@ -1,5 +1,4 @@
 ﻿using WebApiEtiqueCerta.Interfaces;
-using WebApiEtiqueCerta.Models;
 using WebApiEtiqueCerta.ViewModels;
 using Microsoft.EntityFrameworkCore;
 using WebApiEtiqueCerta.ViewModels.Legislation;
@@ -7,6 +6,7 @@ using WebApiEtiqueCerta.ViewModels.ConservationProcesses;
 using WebApiEtiqueCerta.ViewModels.Symbology;
 using System.Data.Entity;
 using System.Diagnostics;
+using WebApiEtiqueCerta.Context;
 
 namespace WebApiEtiqueCerta.Repository
 {
@@ -15,59 +15,48 @@ namespace WebApiEtiqueCerta.Repository
         etiquetaCertaContext ctx = new etiquetaCertaContext();
 
         /// <summary>
-        /// 
+        /// Função que adiciona um novo registro de uma Legislation ao banco de dados 
         /// </summary>
-        /// <param name="_legislation"></param>
-        /// <exception cref="ArgumentException"></exception>
-        public void Create(PostLegislationViewModel _legislation)
+        /// <param name="postLegislation">Parametro que recebe os dados que serão registrados ao banco</param>
+        /// <exception cref="ArgumentException">Retorna do caso de preenchimento incorreto no payload</exception>
+        public void Create(PostLegislationViewModel postLegislation)
         {
-            // Cria nova instância de Legislation e adiciona as informações básicas
             Legislation legislation = new Legislation
             {
-                Name = _legislation.Name,
-                Official_language = _legislation.Official_language
+                Name = postLegislation.Name,
+                OfficialLanguage = postLegislation.Official_language
             };
 
             ctx.Legislations.Add(legislation);
 
-            // HashSet para garantir que não haja duplicatas de process dentro de uma mesma legislation
             HashSet<Guid> uniqueProcess = new HashSet<Guid>();
 
-            // Itera pelos processos de conservação
-            foreach (var processViewModel in _legislation.Conservation_process)
+            foreach (var processViewModel in postLegislation.Conservation_process!)
             {
-                // Verifica se o processos já foi adicionada no HashSet para esse processo
                 if (uniqueProcess.Contains(processViewModel.Id_process))
                 {
-                    throw new ArgumentException("Simbologias duplicadas, tente novamente");
+                    throw new ArgumentException("Processos duplicados, tente novamente");
                 }
 
-                // Adiciona processo ao HashSet para garantir unicidade
                 uniqueProcess.Add(processViewModel.Id_process);
 
-                // Cria uma instância de ProcessInLegislation
                 ProcessInLegislation processInLegislation = new ProcessInLegislation
                 {
                     IdLegislation = legislation.Id,
                     IdProcess = processViewModel.Id_process
                 };
 
-                // HashSet para garantir que não haja duplicatas de simbologias dentro do mesmo processo
                 HashSet<Guid> uniqueSymbologies = new HashSet<Guid>();
 
-                // Itera pelas simbologias associadas ao processo de conservação
-                foreach (var symbology in processViewModel.Symbology)
+                foreach (var symbology in processViewModel.Symbology!)
                 {
-                    // Verifica se a simbologia já foi adicionada no HashSet para esse processo
                     if (uniqueSymbologies.Contains(symbology.Id))
                     {
                         throw new ArgumentException("Simbologias duplicadas, tente novamente");
                     }
 
-                    // Adiciona simbologia ao HashSet para garantir unicidade
                     uniqueSymbologies.Add(symbology.Id);
 
-                    // Verifica se a tradução de simbologia já existe
                     var existingSymbologyTranslate = ctx.SymbologyTranslates
                         .FirstOrDefault(s => s.IdSymbology == symbology.Id && s.IdLegislation == legislation.Id);
 
@@ -80,7 +69,6 @@ namespace WebApiEtiqueCerta.Repository
 
                     if (existingSymbologyTranslate == null)
                     {
-                        // Se não existir, cria um novo registro de SymbologyTranslate
                         SymbologyTranslate symbologyTranslate = new SymbologyTranslate
                         {
                             IdSymbology = symbology.Id,
@@ -88,24 +76,21 @@ namespace WebApiEtiqueCerta.Repository
                             Translate = symbology.Translate
                         };
 
-                        // Adiciona ao contexto
                         ctx.SymbologyTranslates.Add(symbologyTranslate);
                     }
                 }
 
-                // Adiciona a relação entre Legislation e Process
                 ctx.ProcessInLegislations.Add(processInLegislation);
             }
 
-            // Se todas as validações passarem, salva as alterações
             ctx.SaveChanges();
         }
 
 
         /// <summary>
-        /// 
+        /// Recupera todas as Legislations do banco de dados.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Retorna uma lista de legislations</returns>
         public List<GetLegislationViewModel> GetAll()
         {
             var result = ctx.Legislations
@@ -113,7 +98,7 @@ namespace WebApiEtiqueCerta.Repository
                 {
                     Id = u.Id,
                     Name = u.Name,
-                    Official_language = u.Official_language,
+                    Official_language = u.OfficialLanguage,
                     Conservation_process = ctx.ProcessInLegislations
                         .Where(p => p.IdLegislation == u.Id)
                         .Select(p => new ConservationProcessesViewModel

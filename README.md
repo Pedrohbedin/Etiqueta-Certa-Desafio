@@ -1,8 +1,30 @@
 # Etiqueta Certa - Desafio
 
+## Solução em video
+https://youtu.be/QxCcAbIExgo
+
 ## Tecnologias 
 - .NET
 - SQL SERVER
+
+## Clone o repositório:
+
+```
+$ git clone https://github.com/Pedrohbedin/Etiqueta-Certa-Desafio.git
+```
+
+## Context
+Será necessário fazer a alteração da string de conexação que está localizada no arquivo EtiquetaCertaContext dentro da pasta Context para um dos valores a seguir:
+- Autenticação do Windows
+```
+=> optionsBuilder.UseSqlServer("Server = [NomeDoServidor]; DataBase = EtiquetaCerta; TrustServerCertificate = true; Integrated Security=True;");
+```
+- Autenticação do SQL Server
+  ```
+  => optionsBuilder.UseSqlServer("Server = [NomeDoServidor]; DataBase = EtiquetaCerta; User Id = [Logon]; Pwd = [Senha]; TrustServerCertificate = true");
+  ```
+
+
 
 ## Script do Banco
 Foi optado por usar o script baseado no SQL SERVER portanto houve a mudança da sintaxe 
@@ -103,12 +125,3 @@ VALUES
 ((SELECT id FROM ConservationProcess WHERE name = 'Limpeza profissional'), 'limpeza-seco-tetracloroetileno-suave', 'Limpeza a seco profissional com tetracloroetileno em processo suave', 'https://oneoffconfeccao.com.br/wp-content/uploads/2018/06/simbolos-cuidados-oneoff-confeccao-lavagem-profissional-3.png');
 GO
 ```
-
-## Clone o repositório:
-
-```
-$ git clone https://github.com/Pedrohbedin/Etiqueta-Certa-Desafio.git
-```
-## NuGet Packages usados 
-- Microsoft.EntityFrameworkCore.Tools
-- Microsoft.EntityFrameworkCore.SqlServer

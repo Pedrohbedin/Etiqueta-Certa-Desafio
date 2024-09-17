@@ -16,9 +16,9 @@ $ git clone https://github.com/Pedrohbedin/Etiqueta-Certa-Desafio.git
 ## Context
 Será necessário fazer a alteração da string de conexação que está localizada no arquivo EtiquetaCertaContext dentro da pasta Context para um dos valores a seguir:
 - Autenticação do Windows
-```
-=> optionsBuilder.UseSqlServer("Server = [NomeDoServidor]; DataBase = EtiquetaCerta; TrustServerCertificate = true; Integrated Security=True;");
-```
+  ```
+  => optionsBuilder.UseSqlServer("Server = [NomeDoServidor]; DataBase = EtiquetaCerta; TrustServerCertificate = true; Integrated Security=True;");
+  ```
 - Autenticação do SQL Server
   ```
   => optionsBuilder.UseSqlServer("Server = [NomeDoServidor]; DataBase = EtiquetaCerta; User Id = [Logon]; Pwd = [Senha]; TrustServerCertificate = true");
